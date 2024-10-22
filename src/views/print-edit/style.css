@@ -1,0 +1,148 @@
+/* scrollbar */
+::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+}
+::-webkit-scrollbar-corner {
+  height: 4px;
+  width: 4px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.2) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0.2) 75%,
+    transparent 75%,
+    transparent
+  );
+}
+::-webkit-scrollbar-thumb:hover {
+}
+
+/* flex */
+.flex-row {
+  display: flex;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.align-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+
+.flex-1 {
+  flex: 1;
+}
+.flex-2 {
+  flex: 2;
+}
+.flex-3 {
+  flex: 3;
+}
+.flex-4 {
+  flex: 4;
+}
+.flex-5 {
+  flex: 7;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+.mr-10 {
+  margin-right: 10px;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+/* 区域 */
+.left {
+  background: #48628b;
+  border-radius: 4px;
+  border: 1px solid #003380;
+  padding: 10px 0;
+  box-shadow: 2px 2px 4px 0px rgb(0, 0, 0, 0.12);
+  overflow: auto;
+}
+.center {
+  margin: 0 10px;
+  background: #48628b;
+  border-radius: 4px;
+  border: 1px solid #003380;
+  padding: 20px;
+  box-shadow: 2px 2px 4px 0px rgb(0, 0, 0, 0.12);
+  overflow: auto;
+}
+.right {
+  background: #48628b;
+  border-radius: 4px;
+  border: 1px solid #003380;
+  padding: 10px 0;
+  box-shadow: 2px 2px 4px 0px rgb(0, 0, 0, 0.12);
+  overflow: auto;
+}
+/* 左侧拖拽元素样式 */
+.title {
+  font-size: 14px;
+  color: #555;
+  width: 100%;
+  margin: 10px 0 0 24px;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4px 10px;
+  margin: 10px 8px 4px 8px;
+  width: 38%;
+  line-height: 28px;
+  color: #666;
+  border: 1px solid rgba(171, 171, 171, 0.2);
+  border-radius: 4px;
+  box-shadow: 2px 2px 6px 0px rgba(171, 171, 171, 0.2);
+}
+.item .iconfont {
+  font-size: 1.5rem;
+}
+.item span {
+  font-size: 12px;
+}
+.nav-top {
+  text-align: center;
+  margin-bottom: 16px;
+}
+.and-block {
+  margin: 0 8px;
+}
+
+/* 重写全局 hiprint 样式 */
+.hiprint-headerLine:hover:before {
+  content: "页眉线";
+  left: calc(50% - 18px);
+  position: relative;
+  top: -14px;
+  font-size: 12px;
+}
+
+.hiprint-footerLine:hover:before {
+  content: "页脚线";
+  left: calc(50% - 18px);
+  position: relative;
+  top: -14px;
+  font-size: 12px;
+}
